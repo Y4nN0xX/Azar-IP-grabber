@@ -23,6 +23,7 @@
         <div id="drag-handle" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; cursor: move;">
             <h3 style="margin: 0; color: #007bff;">Detected IP Addresses</h3>
             <button id="clear-ip-list" style="padding: 10px 15px; border: none; background-color: #dc3545; color: white; border-radius: 8px; cursor: pointer; transition: background-color 0.3s;">Clear</button>
+            <button id="close-ip-container" style="padding: 10px 15px; border: none; background-color: #dc3545; color: white; border-radius: 8px; cursor: pointer; transition: background-color 0.3s;">X</button>
         </div>
         <div id="ip-addresses"></div>
         <div id="twitter-button" style="margin-top: 10px; text-align: center;">
@@ -35,6 +36,11 @@
     document.getElementById('clear-ip-list').addEventListener('click', () => {
         const ipList = document.getElementById('ip-addresses');
         ipList.innerHTML = '';
+    });
+
+    // Add event listener to close button
+    document.getElementById('close-ip-container').addEventListener('click', () => {
+        document.body.removeChild(ipContainer);
     });
 
     // Make the container draggable
