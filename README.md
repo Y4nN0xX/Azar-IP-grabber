@@ -10,3 +10,5 @@ Interface utilisateur améliorée : Le conteneur est redimensionnable et dépla�
 
 Comment l'utiliser  :
 Copiez et collez ce script directement dans la console de développement de Google Chrome pour activer le détecteur d'IP.
+
+![Photo]([http://url/to/img.png](https://r2.e-z.host/d09c5aba-331a-4b83-82da-a87b7fbe19be/85txg44m.png))
